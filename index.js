@@ -21,7 +21,7 @@ async function chatGPT(message) {
     model: "text-davinci-003",
     prompt: message,
     temperature: 0,
-    max_tokens: 200,
+    max_tokens: 1000,
   });
   return completion.data.choices[0].text;
 }
