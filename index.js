@@ -5,6 +5,7 @@ require("dotenv").config();
 
 const client = new Client({
   authStrategy: new LocalAuth(),
+  puppeteer: { args: ["--no-sandbox"] },
 });
 
 const configuration = new Configuration({
