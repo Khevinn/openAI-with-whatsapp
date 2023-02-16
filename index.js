@@ -17,6 +17,10 @@ client.on("qr", (qr) => {
   qrcode.generate(qr, { small: true });
 });
 
+qrcode.generate("http://github.com", (qrcode) => {
+  console.log(qrcode);
+});
+
 async function chatGPT(message) {
   const completion = await openai.createCompletion({
     model: "text-davinci-003",
