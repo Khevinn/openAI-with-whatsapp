@@ -14,7 +14,7 @@ $ npm install
 ### dev
 
 ```bash
-$ node index.js 
+$ node index.js or npm run dev
 ```
 ### dev with nodemon
 ```bash
